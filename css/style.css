@@ -444,3 +444,13 @@ top: 12.5%;
   left:-50%;
   top: -25%;
 }
+
+#spinner {
+position: fixed;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+z-index: 9999;
+background: url(images/InsistentClutteredKoodoo.gif) 50% 50% no-repeat #ede9df;
+}
