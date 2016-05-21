@@ -1,0 +1,30 @@
+<div class="animated about" ng-show="abouti" ng-class="{zoomInDown: about, bounceOutUp: !about}" ng-cloak>
+    <md-content layout-xs=" column " layout="row " class="transparent ">
+        <div flex-xs flex-gt-xs="35 "></div>
+        <div flex-xs flex-gt-xs="55 ">
+            <md-card style="min-height: 60vh; ">
+                <img ng-src="assets/images/about.jpg" class="md-card-image" alt="Washed Out">
+                <md-card-title layout="row">
+                    <div flex-xs="5"></div>
+                    <md-card-title-text flex-xs="80">
+                        <span class="md-headline ">About Me</span>
+                        <span class="md-subhead ">
+                                My name is Naresh and I am a student studying computer science at <a href="http://www.iitkgp.ac.in/">Indian Institute of Technology, Kharagpur</a>. Apart from my regular work, I enjoy writing and listening to songs. I am currently a software development intern at <a href="http://www.ezdi.com/">ezDI, Ahmedabad</a>. 
+
+                                You can check out my <a href="http://ghostwriternr.github.io/pogad/">blog</a>, or some of my projects. You can find me on <a href="https://github.com/ghostwriternr">Github</a>, <a href="https://www.facebook.com/naresh.ramesh">Facebook</a>, <a href="https://play.spotify.com/user/22gndvram3iydupmjvgg7fz2a">Spotify</a>, <a href="https://www.youtube.com/user/nareshmdu">Youtube</a>, <a href="https://in.linkedin.com/in/naresh-r-464a8b8b">LinkedIn</a> and <a href="https://www.instagram.com/naresh_r/">Instagram</a>.
+
+                                Take a look at my resume and feel free to contact me.
+                                </span>
+                    </md-card-title-text>
+                    <div flex-xs="5" layout-align="end right" style="position: relative;">
+                        <md-button class="md-icon-button" aria-label="Favorite" ng-click="about=!about" ng-class="{active: about}">
+                            <ng-md-icon icon="close" style="fill: #000000;">
+                                </md-icon>
+                        </md-button>
+                    </div>
+                </md-card-title>
+            </md-card>
+        </div>
+        <div flex-xs flex-gt-xs="10 "></div>
+    </md-content>
+</div>

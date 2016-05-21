@@ -13,6 +13,12 @@
     background: transparent;
 }
 
+[ng\:cloak],
+[ng-cloak],
+.ng-cloak {
+    display: none !important;
+}
+
 .about {
     font-family: junction regular;
     z-index: 999;
