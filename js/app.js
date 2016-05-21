@@ -119,7 +119,8 @@
     });
     app.controller('MainController', ['$scope', '$http', '$sce', '$mdDialog', '$mdMedia', '$mdToast',
         function($scope, $http, $sce, $mdDialog, $mdMedia, $mdToast) {
-            $scope.about = true;
+            $scope.abouti = false;
+            $scope.about = false;
         }
     ]);
 })();
