@@ -1,5 +1,11 @@
 (function() {
-    var app = angular.module('ghostPS', []);
+    var app = angular.module('ghostPS', ['ngMaterial']);
+        // .config(function($mdThemingProvider) {
+        //     $mdThemingProvider.theme('default')
+        //         .primaryPalette('blue')
+        //         .accentPalette('blue-grey')
+        //         .warnPalette('orange');
+        // });
     app.controller('HomeController', function() {
         particlesJS('particles-js', {
             "particles": {
@@ -57,7 +63,7 @@
                 },
                 "move": {
                     "enable": true,
-                    "speed": 3,
+                    "speed": 2,
                     "direction": "none",
                     "random": false,
                     "straight": false,
