@@ -16,9 +16,10 @@ body {
     position: absolute;
     width: 101%;
     height: 101%;
-    background-color: #170420;
-    background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-340624.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+    background: #47a591;
+    background: -webkit-linear-gradient(left, #47a591, #478ba5);
+    background: -moz-linear-gradient(left, #47a591, #478ba5);
+    background: -ms-linear-gradient(left, #47a591, #478ba5);
+    background: -o-linear-gradient(left, #47a591, #478ba5);
+    background: linear-gradient(to right, #47a591, #478ba5);
 }
