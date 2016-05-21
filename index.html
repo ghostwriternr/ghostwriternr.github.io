@@ -15,9 +15,9 @@
     </div>
     <main ng-controller="MainController">
         <md-content layout="row" layout-align="center center" style="min-height: 100vh;">
-            <div flex="5">
+            <div flex-xs="5" flex-sm="5" flex="5">
             </div>
-            <div flex="20">
+            <div flex-xs="90" flex-sm="90" flex="20">
                 <div id="MainTitle">
                     <p class="md-display-2">Naresh R</p>
                     <p class="md-headline"><i>Student at IIT Kharagpur</i></p>
@@ -25,14 +25,14 @@
                     <p class="md-body-1"><b>Current:</b> Software Development Intern at ezDI</p>
                     <br/>
                     <br/>
-                    <div layout-xs="column" layout="row" style="min-height: 8vh;">
+                    <div layout-xs="column" layout-sm="column" layout="row" style="min-height: 8vh;">
                         <p class="md-subhead" href="#" flex ng-click="about=!about; abouti=true" ng-class="{active: about}" style="cursor: pointer;">About</p>
                         <p class="md-subhead" href="#" flex ng-click="about=!about; abouti=true" ng-class="{active: about}" style="cursor: pointer;">Projects</p>
                         <p class="md-subhead" href="#" flex ng-click="about=!about; abouti=true" ng-class="{active: about}" style="cursor: pointer;">Resume</p>
                     </div>
                 </div>
             </div>
-            <div flex="75">
+            <div flex-xs="5" flex-sm="5" flex="75">
             </div>
         </md-content>
         <div ng-include src="'allcards.html'"></div>
