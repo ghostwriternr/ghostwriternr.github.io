@@ -1,0 +1,22 @@
+{
+  "name": "ghostwriternr.github.io",
+  "homepage": "https://github.com/ghostwriternr/ghostwriternr.github.io",
+  "authors": [
+    "ghostwriternr <ghostwriternr@gmail.com>"
+  ],
+  "description": "bower packages for my personal site",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.0.9",
+    "particles.js": "^2.0.0"
+  }
+}

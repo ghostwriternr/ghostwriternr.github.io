@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    width: 101%;
+    height: 101%;
+    background-color: #170420;
+    background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-340624.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
