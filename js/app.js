@@ -1,12 +1,11 @@
 (function() {
-    var app = angular.module('ghostPS', ['ngMaterial']);
-        // .config(function($mdThemingProvider) {
-        //     $mdThemingProvider.theme('default')
-        //         .primaryPalette('blue')
-        //         .accentPalette('blue-grey')
-        //         .warnPalette('orange');
-        // });
-    app.controller('HomeController', function() {
+    var app = angular.module('ghostPS', ['ngMaterial', 'ngAnimate', 'ngMdIcons'])
+        .config(function($mdThemingProvider) {
+            $mdThemingProvider.theme('default')
+                .primaryPalette('deep-purple')
+                .accentPalette('pink');
+        });
+    app.controller('BackController', function() {
         particlesJS('particles-js', {
             "particles": {
                 "number": {
@@ -118,4 +117,9 @@
             "retina_detect": true
         });
     });
+    app.controller('MainController', ['$scope', '$http', '$sce', '$mdDialog', '$mdMedia', '$mdToast',
+        function($scope, $http, $sce, $mdDialog, $mdMedia, $mdToast) {
+            $scope.about = true;
+        }
+    ]);
 })();

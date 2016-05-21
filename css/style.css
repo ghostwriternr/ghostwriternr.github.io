@@ -13,10 +13,22 @@
     background: transparent;
 }
 
+.about {
+    font-family: junction regular;
+    z-index: 999;
+    position: relative;
+    background: transparent;
+    margin-top: -75vh;
+}
+
 #MainTitle {
-	font-family: junction regular;
+    font-family: junction regular;
     z-index: 999;
     position: relative;
     color: white;
     /*text-align: center;*/
+}
+
+.transparent {
+    background-color: transparent !important;
 }

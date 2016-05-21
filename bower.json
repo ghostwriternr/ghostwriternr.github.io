@@ -17,6 +17,9 @@
   ],
   "dependencies": {
     "angular-material": "^1.0.9",
-    "particles.js": "^2.0.0"
+    "particles.js": "^2.0.0",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.4",
+    "angular-material-icons": "^0.7.0"
   }
 }
