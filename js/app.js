@@ -119,11 +119,8 @@
     });
     app.controller('MainController', ['$scope', '$http', '$sce', '$mdDialog', '$mdMedia', '$mdToast',
         function($scope, $http, $sce, $mdDialog, $mdMedia, $mdToast) {
-            $scope.abouti = false;
-            $scope.about = false;
-            $scope.projectsi = false;
+            $scope.aboutvar = false;
             $scope.projects = false;
-            $scope.resumei = false;
             $scope.resume = false;
         }
     ]);
