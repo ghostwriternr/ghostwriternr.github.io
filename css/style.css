@@ -37,8 +37,6 @@
     /*margin-top: -85vh;*/
     display: table-cell;
     vertical-align: middle;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 #maincontent {
