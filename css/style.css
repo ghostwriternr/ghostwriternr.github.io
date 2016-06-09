@@ -23,11 +23,14 @@
 }
 
 .about {
+    height: 100%;
     font-family: junction regular;
     z-index: 999;
     position: relative;
     background: transparent;
-    margin-top: -85vh;
+    /*margin-top: -85vh;*/
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #MainTitle {
