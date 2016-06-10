@@ -87,14 +87,14 @@
 
 
 /* Page specific transitions */
-
+/*
 .page-home.ng-enter {
     animation: scaleUp .7s ease both;
 }
 
 .page-home.ng-leave {
     animation: scaleDown .7s ease both;
-}
+}*/
 
 .page-about.ng-enter {
     animation: moveFromRight .6s ease both;
