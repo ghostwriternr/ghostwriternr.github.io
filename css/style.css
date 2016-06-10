@@ -26,6 +26,10 @@
     height: 100%;
     width: 100%;
     position: relative;
+    bottom: 0;
+    padding-top: 200px;
+    position: absolute;
+    top: 0;
 }
 
 #maincontent {
@@ -56,4 +60,23 @@
 .ng-leave {
     animation: moveToLeft .7s ease-in-out both;
     z-index: 9999;
+}
+
+
+/* PAGES (specific colors for each page)
+============================================================================= */
+
+.page-home {
+    background: #00D0BC;
+    color: #00907c;
+}
+
+.page-about {
+    background: #E59400;
+    color: #a55400;
+}
+
+.page-contact {
+    background: #ffa6bb;
+    color: #9e0000;
 }
