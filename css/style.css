@@ -27,7 +27,6 @@
     width: 100%;
     position: relative;
     bottom: 0;
-    padding-top: 200px;
     position: absolute;
     top: 0;
 }
@@ -53,12 +52,12 @@
 }
 
 .ng-enter {
-    animation: moveToLeft .6s ease both;
+    animation: moveFromLeftFade .7s ease both;
     z-index: 8888;
 }
 
 .ng-leave {
-    animation: moveToLeft .7s ease-in-out both;
+    animation: moveToLeftFade .7s ease both;
     z-index: 9999;
 }
 
