@@ -1,10 +1,28 @@
 (function() {
-    var app = angular.module('ghostPS', ['ngMaterial', 'ngAnimate', 'ngMdIcons'])
+    var app = angular.module('ghostPS', ['ngRoute', 'ngMaterial', 'ngAnimate', 'ngMdIcons'])
         .config(function($mdThemingProvider) {
             $mdThemingProvider.theme('default')
                 .primaryPalette('deep-purple')
                 .accentPalette('pink');
         });
+    app.config(function($routeProvider) {
+        $routeProvider
+        // home page
+            .when('/', {
+                templateUrl: 'home.html',
+                controller: 'mainController'
+            })
+            // about page
+            .when('/about', {
+                templateUrl: 'about.html',
+                controller: 'aboutController'
+            })
+            // contact page
+            .when('/projects', {
+                templateUrl: 'projects.html',
+                controller: 'projectsController'
+            });
+    });
     app.controller('BackController', function() {
         particlesJS('particles-js', {
             "particles": {
@@ -117,11 +135,19 @@
             "retina_detect": true
         });
     });
-    app.controller('MainController', ['$scope', '$http', '$sce', '$mdDialog', '$mdMedia', '$mdToast',
+    app.controller('mainController', ['$scope', '$http', '$sce', '$mdDialog', '$mdMedia', '$mdToast',
         function($scope, $http, $sce, $mdDialog, $mdMedia, $mdToast) {
-            $scope.aboutvar = false;
-            $scope.projects = false;
-            $scope.resume = false;
+            $scope.pageClass = 'page-home';
+        }
+    ]);
+    app.controller('aboutController', ['$scope', '$http', '$sce', '$mdDialog', '$mdMedia', '$mdToast',
+        function($scope, $http, $sce, $mdDialog, $mdMedia, $mdToast) {
+            $scope.pageClass = 'page-about';
+        }
+    ]);
+    app.controller('projectsController', ['$scope', '$http', '$sce', '$mdDialog', '$mdMedia', '$mdToast',
+        function($scope, $http, $sce, $mdDialog, $mdMedia, $mdToast) {
+            $scope.pageClass = 'page-projects';
         }
     ]);
 })();

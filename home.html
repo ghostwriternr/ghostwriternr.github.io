@@ -1,0 +1,26 @@
+<!-- <div ng-controller="BackController">
+    <div id="particles-js" class="particlesJS"></div>
+</div> -->
+<main id="container" ng-controller="mainController">
+    <md-content id="maincontent" layout="row" layout-align="center center" style="min-height: 100vh;">
+        <div flex-xs="5" flex-sm="5" flex="5">
+        </div>
+        <div flex-xs="90" flex-sm="90" flex="25">
+            <div id="MainTitle">
+                <p class="md-display-2">Naresh R</p>
+                <p class="md-headline"><i>Student at IIT Kharagpur</i></p>
+                <br/>
+                <p class="md-body-1"><b>Current:</b> Software Development Intern at ezDI</p>
+                <br/>
+                <br/>
+                <div layout-xs="column" layout-sm="column" layout="row" style="min-height: 8vh;">
+                    <p class="md-subhead" href="#" flex ng-click="aboutvar=!aboutvar;" ng-class="{active: aboutvar==false}" style="cursor: pointer;">About</p>
+                    <p class="md-subhead" href="#" flex ng-click="projects=!projects;" ng-class="{active: projects==false}" style="cursor: pointer;">Projects</p>
+                    <p class="md-subhead" href="#" flex ng-click="resume=!resume;" ng-class="{active: resume==false}" style="cursor: pointer;">Resume</p>
+                </div>
+            </div>
+        </div>
+        <div flex-xs="5" flex-sm="5" flex="70">
+        </div>
+    </md-content>
+</main>

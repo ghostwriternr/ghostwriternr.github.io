@@ -28,29 +28,6 @@
     position: relative;
 }
 
-.about {
-    position: absolute;
-    height: 100%;
-    font-family: junction regular;
-    z-index: 10;
-    background: transparent;
-    /*margin-top: -85vh;*/
-    display: table-cell;
-    vertical-align: middle;
-}
-
-#center-card {
-/*    height: 100%;
-    width: 100%;*/
-    /*margin: auto;*/
-    position: relative;
-    top: 50vh;
-    transform: translateY(-50%);
-/*    left: 0;
-    bottom: 0;
-    right: 0;*/
-}
-
 #maincontent {
     width: 100%;
     height: 100%;
