@@ -52,7 +52,7 @@
 }
 
 .ng-enter {
-    animation: moveFromLeftFade .7s ease both;
+    animation: moveFromRightFade .7s ease both;
     z-index: 8888;
 }
 
@@ -65,17 +65,12 @@
 /* PAGES (specific colors for each page)
 ============================================================================= */
 
-.page-home {
-    background: #00D0BC;
-    color: #00907c;
-}
-
 .page-about {
     background: #E59400;
     color: #a55400;
 }
 
-.page-contact {
+.page-projects {
     background: #ffa6bb;
     color: #9e0000;
 }
