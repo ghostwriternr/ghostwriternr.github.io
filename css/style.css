@@ -49,11 +49,11 @@
 }
 
 .ng-enter {
-    animation: scaleUp 0.5s both ease-in;
+    animation: moveToLeft .6s ease both;
     z-index: 8888;
 }
 
 .ng-leave {
-    animation: slideOutLeft 0.5s both ease-in;
+    animation: moveToLeft .7s ease-in-out both;
     z-index: 9999;
 }
