@@ -32,7 +32,7 @@
     position: absolute;
     height: 100%;
     font-family: junction regular;
-    z-index: 999;
+    z-index: 10;
     background: transparent;
     /*margin-top: -85vh;*/
     display: table-cell;
