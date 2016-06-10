@@ -52,12 +52,10 @@
 }
 
 .ng-enter {
-    animation: moveFromRight .6s ease both;
     z-index: 8888;
 }
 
 .ng-leave {
-    animation: moveToLeft .7s ease-in-out both;
     z-index: 9999;
 }
 
@@ -85,4 +83,31 @@
     text-align: center;
     top: 0;
     width: 100%;
+}
+
+
+/* Page specific transitions */
+
+.page-home.ng-enter {
+    animation: fade .7s ease both;
+}
+
+.page-home.ng-leave {
+    animation: fade .7s ease both;
+}
+
+.page-about.ng-enter {
+    animation: moveFromRight .6s ease both;
+}
+
+.page-about.ng-leave {
+    animation: moveToRight .6s ease both;
+}
+
+.page-projects.ng-enter {
+    animation: moveFromLeft .6s ease both;
+}
+
+.page-projects.ng-leave {
+    animation: moveToLeft .6s ease both;
 }
