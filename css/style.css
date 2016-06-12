@@ -72,22 +72,21 @@
     z-index: 9999;
 }
 
-a {
+nav a {
     position: relative;
     display: inline-block;
-    margin: 15px 25px;
     outline: none;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: 300;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
     font-size: 1.35em;
 }
 
-a:hover,
-a:focus {
+nav a:hover,
+nav a:focus {
     outline: none;
 }
 
