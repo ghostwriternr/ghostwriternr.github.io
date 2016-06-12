@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html ng-app="ghostPS">
 <style type="text/css">
-html, body {
+html,
+body {
     background-color: black;
 }
 </style>
 
 <head>
-    <meta name="theme-color" content="#5f036a">
+    <meta name="theme-color" content="#2c036a">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -17,6 +18,9 @@ html, body {
 </head>
 
 <body ng-app="ghostPS">
+    <div ng-controller="BackController">
+        <div id="particles-js" class="particlesJS"></div>
+    </div>
     <div class="page {{ pageClass }}" ng-view></div>
     <script src="bower_components/angular/angular.js "></script>
     <script src="bower_components/angular-aria/angular-aria.js "></script>
