@@ -90,6 +90,25 @@ nav a:focus {
     outline: none;
 }
 
+
+/* PAGES (specific colors for each page)
+============================================================================= */
+
+.page-about {
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.page-projects {
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
 /* Page specific transitions */
 
 .page-home.ng-enter {
