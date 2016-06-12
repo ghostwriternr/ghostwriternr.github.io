@@ -80,9 +80,9 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 100;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
-    font-size: 1.35em;
+    font-size: 1em;
 }
 
 nav a:hover,
