@@ -8,11 +8,11 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #5f036a;
-    background: -webkit-linear-gradient(left top, #5f036a, #2c036a);
-    background: -moz-linear-gradient(left top, #5f036a, #2c036a);
-    background: -ms-linear-gradient(left top, #5f036a, #2c036a);
-    background: -o-linear-gradient(left top, #5f036a, #2c036a);
-    background: linear-gradient(to bottom right, #5f036a, #2c036a);
+    background: #7505b4;
+    background: -webkit-linear-gradient(left top, #7505b4, #fb464c);
+    background: -moz-linear-gradient(left top, #7505b4, #fb464c);
+    background: -ms-linear-gradient(left top, #7505b4, #fb464c);
+    background: -o-linear-gradient(left top, #7505b4, #fb464c);
+    background: linear-gradient(to bottom right, #7505b4, #fb464c);
     z-index: 1;
 }
