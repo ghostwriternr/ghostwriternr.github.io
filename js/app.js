@@ -1,5 +1,5 @@
 (function() {
-    var app = angular.module('ghostPS', ['ngRoute', 'ngMaterial', 'ngAnimate', 'ngMdIcons'])
+    var app = angular.module('ghostPS', ['ngRoute', 'ngMaterial', 'ngAnimate', 'ngMdIcons', 'ngMessages'])
         .config(function($mdThemingProvider) {
             $mdThemingProvider.theme('default')
                 .primaryPalette('deep-purple')

@@ -1,12 +1,84 @@
-<style type="text/css">
-#about-page-index {
-    z-index: 8888;
+<link rel="stylesheet" type="text/css" href="https://material.angularjs.org/1.1.0-rc.5/docs.css">
+<link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+<style>
+body {
+  overflow: hidden;
+}
+
+.gridListdemoBasicUsage md-grid-list {
+    margin: 8px;
+}
+
+.gridListdemoBasicUsage .gray {
+    background: #f5f5f5;
+}
+
+.gridListdemoBasicUsage .green {
+    background: #b9f6ca;
+}
+
+.gridListdemoBasicUsage .yellow {
+    background: #ffff8d;
+}
+
+.gridListdemoBasicUsage .blue {
+    background: #84ffff;
+}
+
+.gridListdemoBasicUsage .purple {
+    background: #b388ff;
+}
+
+.gridListdemoBasicUsage .red {
+    background: #ff8a80;
+}
+
+.gridListdemoBasicUsage md-grid-tile {
+    transition: all 400ms ease-out 50ms;
 }
 </style>
-<!-- page-home.html -->
-<div id="about-page-index">
-    <h1>Angular Animations Shenanigans</h1>
-    <h2>About</h2>
-    <a href="/" class="btn btn-success btn-lg">About</a>
-    <a href="projects" class="btn btn-danger btn-lg">Contact</a>
-</div>
+<script src="bower_components/angular/angular.js "></script>
+<script src="bower_components/angular-aria/angular-aria.js "></script>
+<script src="bower_components/angular-animate/angular-animate.js "></script>
+<script src="bower_components/angular-material/angular-material.js "></script>
+<script src="bower_components/angular-messages/angular-messages.js "></script>
+<script src="bower_components/angular-route/angular-route.js "></script>
+<script src="bower_components/angular-material-icons/angular-material-icons.js"></script>
+<script src="js/app.js " type="text/javascript "></script>
+
+<body>
+    <div ng-controller="aboutController" ng-cloak="" class="gridListdemoBasicUsage" ng-app="ghostPS">
+        <md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="6" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
+            <md-grid-tile class="gray" md-rowspan="3" md-colspan="2" md-colspan-sm="1" md-colspan-xs="1">
+                <md-grid-tile-footer>
+                    <h3>#1: (3r x 2c)</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="green">
+                <md-grid-tile-footer>
+                    <h3>#2: (1r x 1c)</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="yellow">
+                <md-grid-tile-footer>
+                    <h3>#3: (1r x 1c)</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="blue" md-rowspan="2">
+                <md-grid-tile-footer>
+                    <h3>#4: (2r x 1c)</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="red" md-rowspan="2" md-colspan="2" md-colspan-sm="1" md-colspan-xs="1">
+                <md-grid-tile-footer>
+                    <h3>#5: (2r x 2c)</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="green" md-rowspan="2">
+                <md-grid-tile-footer>
+                    <h3>#6: (2r x 1c)</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+        </md-grid-list>
+    </div>
+</body>
