@@ -5,7 +5,7 @@
                 .primaryPalette('deep-purple')
                 .accentPalette('pink');
         });
-    app.config(function($routeProvider) {
+    app.config(function($routeProvider, $locationProvider) {
         $routeProvider
         // home page
             .when('/home', {
@@ -22,6 +22,9 @@
                 templateUrl: 'projects.html',
                 controller: 'projectsController'
             });
+
+        // use the HTML5 History API
+        $locationProvider.html5Mode(true);
     });
     app.controller('BackController', function() {
         particlesJS('particles-js', {
