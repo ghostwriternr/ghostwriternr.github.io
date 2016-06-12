@@ -13,35 +13,40 @@
 </head>
 
 <body ng-app="ghostPS">
-    <div ng-controller="BackController">
-        <div id="particles-js" class="particlesJS"></div>
-    </div>
-    <main id="container" ng-controller="mainController">
-        <md-content id="maincontent" layout="row" layout-align="center center" style="min-height: 100vh;">
-            <div flex-xs="5" flex-sm="5" flex="5">
+    <div id="mainContentParent">
+        <div id="mainContent">
+            <div ng-controller="BackController">
+                <div id="particles-js" class="particlesJS"></div>
             </div>
-            <div flex-xs="90" flex-sm="90" flex="25">
-                <div id="MainTitle">
-                    <p class="md-display-2">Naresh R</p>
-                    <p class="md-headline"><i>Student at IIT Kharagpur</i></p>
-                    <br/>
-                    <p class="md-body-1"><b>Current:</b> Software Development Intern at ezDI</p>
-                    <br/>
-                    <br/>
-                    <div layout-xs="column" layout-sm="column" layout="row" style="min-height: 8vh;">
-                        <p class="md-subhead" href="about" flex style="cursor: pointer;">About</p>
-                        <p class="md-subhead" href="projects" flex style="cursor: pointer;">Projects</p>
-                        <p class="md-subhead" href="" flex style="cursor: pointer;">Resume</p>
-                        <a href="about" class="btn btn-success btn-lg">About</a>
-                        <a href="projects" class="btn btn-danger btn-lg">Contact</a>
+            <main id="container" ng-controller="mainController">
+                <md-content id="maincontent" layout="row" layout-align="center center" style="min-height: 100vh;">
+                    <div flex-xs="5" flex-sm="5" flex="5">
                     </div>
-                </div>
-            </div>
-            <div flex-xs="5" flex-sm="5" flex="70">
-            </div>
-        </md-content>
-    </main>
-    <div class="page {{ pageClass }}" ng-view style="z-index: 10000;"></div>
+                    <div flex-xs="90" flex-sm="90" flex="25">
+                        <div id="MainTitle">
+                            <p class="md-display-2">Naresh R</p>
+                            <p class="md-headline"><i>Student at IIT Kharagpur</i></p>
+                            <br/>
+                            <p class="md-body-1"><b>Current:</b> Software Development Intern at ezDI</p>
+                            <br/>
+                            <br/>
+                            <div layout-xs="column" layout-sm="column" layout="row" style="min-height: 8vh;">
+                                <p class="md-subhead" href="about" flex style="cursor: pointer;">About</p>
+                                <p class="md-subhead" href="projects" flex style="cursor: pointer;">Projects</p>
+                                <p class="md-subhead" href="" flex style="cursor: pointer;">Resume</p>
+                                <a href="about" class="btn btn-success btn-lg">About</a>
+                                <a href="projects" class="btn btn-danger btn-lg">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div flex-xs="5" flex-sm="5" flex="70">
+                    </div>
+                </md-content>
+            </main>
+            <div class="page {{ pageClass }}" ng-view style="z-index: 10000;"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/style.js"></script>
     <script src="bower_components/angular/angular.js "></script>
     <script src="bower_components/angular-aria/angular-aria.js "></script>
     <script src="bower_components/angular-animate/angular-animate.js "></script>
