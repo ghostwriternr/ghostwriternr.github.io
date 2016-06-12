@@ -89,25 +89,43 @@
 /* Page specific transitions */
 
 .page-home.ng-enter {
-    animation: scaleUp .7s ease both;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-animation: rotateRoomBottomIn .8s both ease;
+    animation: rotateRoomBottomIn .8s both ease;
 }
 
 .page-home.ng-leave {
-    animation: scaleDown .7s ease both;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-animation: rotateRoomTopOut .8s both ease;
+    animation: rotateRoomTopOut .8s both ease;
 }
 
 .page-about.ng-enter {
-    animation: moveFromRight .6s ease both;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-animation: rotateRoomTopIn .8s both ease;
+    animation: rotateRoomTopIn .8s both ease;
 }
 
 .page-about.ng-leave {
-    animation: moveToRight .6s ease both;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-animation: rotateRoomBottomOut .8s both ease;
+    animation: rotateRoomBottomOut .8s both ease;
 }
 
 .page-projects.ng-enter {
-    animation: moveFromLeft .6s ease both;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-animation: rotateRoomTopIn .8s both ease;
+    animation: rotateRoomTopIn .8s both ease;
 }
 
 .page-projects.ng-leave {
-    animation: moveToLeft .6s ease both;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-animation: rotateRoomBottomOut .8s both ease;
+    animation: rotateRoomBottomOut .8s both ease;
 }
