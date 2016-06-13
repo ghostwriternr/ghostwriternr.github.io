@@ -5,36 +5,16 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-.gridListdemoBasicUsage md-grid-list {
-    margin: 8px;
+md-card {
+    background-color: gray;
+    height: 100%;
 }
 
-.gridListdemoBasicUsage .gray {
-    background: #f5f5f5;
-}
-
-.gridListdemoBasicUsage .green {
-    background: #b9f6ca;
-}
-
-.gridListdemoBasicUsage .yellow {
-    background: #ffff8d;
-}
-
-.gridListdemoBasicUsage .blue {
-    background: #84ffff;
-}
-
-.gridListdemoBasicUsage .purple {
-    background: #b388ff;
-}
-
-.gridListdemoBasicUsage .red {
-    background: #ff8a80;
-}
-
-.gridListdemoBasicUsage md-grid-tile {
-    transition: all 400ms ease-out 50ms;
+.image-card {
+    background-image: url("assets/images/about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 </style>
 <script src="bower_components/angular/angular.js "></script>
@@ -48,37 +28,27 @@ body::-webkit-scrollbar {
 
 <body>
     <div ng-controller="aboutController" ng-cloak="" class="gridListdemoBasicUsage" ng-app="ghostPS">
-        <md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="6" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
-            <md-grid-tile class="gray" md-rowspan="3" md-colspan="2" md-colspan-sm="1" md-colspan-xs="1">
-                <md-grid-tile-footer>
-                    <h3>#1: (3r x 2c)</h3>
-                </md-grid-tile-footer>
-            </md-grid-tile>
-            <md-grid-tile class="green">
-                <md-grid-tile-footer>
-                    <h3>#2: (1r x 1c)</h3>
-                </md-grid-tile-footer>
-            </md-grid-tile>
-            <md-grid-tile class="yellow">
-                <md-grid-tile-footer>
-                    <h3>#3: (1r x 1c)</h3>
-                </md-grid-tile-footer>
-            </md-grid-tile>
-            <md-grid-tile class="blue" md-rowspan="2">
-                <md-grid-tile-footer>
-                    <h3>#4: (2r x 1c)</h3>
-                </md-grid-tile-footer>
-            </md-grid-tile>
-            <md-grid-tile class="red" md-rowspan="2" md-colspan="2" md-colspan-sm="1" md-colspan-xs="1">
-                <md-grid-tile-footer>
-                    <h3>#5: (2r x 2c)</h3>
-                </md-grid-tile-footer>
-            </md-grid-tile>
-            <md-grid-tile class="green" md-rowspan="2">
-                <md-grid-tile-footer>
-                    <h3>#6: (2r x 1c)</h3>
-                </md-grid-tile-footer>
-            </md-grid-tile>
-        </md-grid-list>
-    </div>
+        <md-content layout-xs="column" layout-gt-md="row">
+            <div flex-xs flex-gt-md="30" layout="column">
+                <md-card class="image-card">
+                </md-card>
+            </div>
+            <div flex-xs flex-gt-md="70" layout="column">
+                <md-card>
+                    <md-card-title>
+                        <md-card-title-text>
+                            <span class="md-headline">Card with image</span>
+                            <span class="md-subhead">Small</span>
+                        </md-card-title-text>
+                        <md-card-title-media>
+                            <div class="md-media-sm card-media"></div>
+                        </md-card-title-media>
+                    </md-card-title>
+                    <md-card-actions layout="row" layout-align="end center">
+                        <md-button>Action 1</md-button>
+                        <md-button>Action 2</md-button>
+                    </md-card-actions>
+                </md-card>
+            </div>
+        </md-content>
 </body>
