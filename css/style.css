@@ -111,7 +111,7 @@ nav a:focus {
 
 /* Page specific transitions */
 
-.page-home.ng-enter {
+/*.page-home.ng-enter {
     -webkit-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
     -webkit-animation: rotateRoomBottomIn .8s both ease;
@@ -123,7 +123,7 @@ nav a:focus {
     transform-origin: 50% 100%;
     -webkit-animation: rotateRoomTopOut .8s both ease;
     animation: rotateRoomTopOut .8s both ease;
-}
+}*/
 
 .page-about.ng-enter {
     -webkit-transform-origin: 50% 0%;
