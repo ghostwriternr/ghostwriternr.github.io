@@ -5,23 +5,19 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-.gridListdemoBasicUsage md-grid-list {
-    margin: 8px;
+body {
+    background: black;
 }
 
-.gridListdemoBasicUsage .gray {
-    background-image: url("assets/images/about.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.image-side img {
+    display: block;
+    margin: auto;
 }
 
-.gridListdemoBasicUsage .green {
-    background: #b9f6ca;
-}
-
-.gridListdemoBasicUsage md-grid-tile {
-    transition: all 400ms ease-out 50ms;
+md-fab-speed-dial md-fab-trigger {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+    padding: 10px;
 }
 </style>
 <script src="bower_components/angular/angular.js "></script>
@@ -34,18 +30,27 @@ body::-webkit-scrollbar {
 <script src="js/app.js " type="text/javascript "></script>
 
 <body>
-    <div ng-controller="aboutController" ng-cloak="" class="gridListdemoBasicUsage" ng-app="ghostPS">
-        <md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="6" md-row-height-gt-md="1:1" md-row-height="1:1" md-gutter="12px" md-gutter-gt-sm="8px">
-            <md-grid-tile class="gray" md-rowspan="3" md-colspan="2" md-colspan-sm="1" md-colspan-xs="1">
-                <md-grid-tile-footer>
-                    <h3>Haah!</h3>
-                </md-grid-tile-footer>
-            </md-grid-tile>
-            <md-grid-tile class="green" md-rowspan="3" md-colspan="4" md-colspan-sm="1" md-colspan-xs="1">
-                <md-grid-tile-footer>
-                    <h3>#2: (1r x 1c)</h3>
-                </md-grid-tile-footer>
-            </md-grid-tile>
-        </md-grid-list>
+    <div ng-controller="aboutController" ng-cloak="" ng-app="ghostPS">
+        <md-fab-speed-dial md-direction="left" class="md-scale md-fab-top-left">
+            <md-fab-trigger>
+                <md-button aria-label="home" class="md-fab" style="background: #7505b4;
+    background: -webkit-linear-gradient(left top, #7505b4, #fb464c);
+    background: -moz-linear-gradient(left top, #7505b4, #fb464c);
+    background: -ms-linear-gradient(left top, #7505b4, #fb464c);
+    background: -o-linear-gradient(left top, #7505b4, #fb464c);
+    background: linear-gradient(to bottom right, #7505b4, #fb464c);">
+                    <md-tooltip md-direction="top" md-visible="tooltipVisible">Home</md-tooltip>
+                    <ng-md-icon icon="home" style="fill: #000000;" aria-label="home"></ng-md-icon>
+                </md-button>
+            </md-fab-trigger>
+        </md-fab-speed-dial>
+        <div layout-gt-md="row" layout-xs="column">
+            <div class="image-side" flex="40">
+                <img style="height: 100%;" src="assets/images/about-bw.jpeg" alt="Me!">
+            </div>
+            <div class="content-side" flex="60" style="color: white;">
+                <p>LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!LOTS OF CONTENT!</p>
+            </div>
+        </div>
     </div>
 </body>
