@@ -9,17 +9,20 @@
         $routeProvider
         // home page
             .when('/', {
-                templateUrl: 'home.html',
+                // templateUrl: 'home.html',
+                templateUrl: '#',
                 controller: 'mainController'
             })
             // about page
             .when('/about', {
-                templateUrl: 'about.html',
+                // templateUrl: 'about.html',
+                templateUrl: '#',
                 controller: 'aboutController'
             })
             // contact page
             .when('/projects', {
-                templateUrl: 'projects.html',
+                // templateUrl: 'projects.html',
+                templateUrl: '#',
                 controller: 'projectsController'
             });
 
