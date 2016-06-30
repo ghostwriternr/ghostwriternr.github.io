@@ -9,8 +9,7 @@
         $routeProvider
         // home page
             .when('/', {
-                // templateUrl: 'home.html',
-                templateUrl: '#',
+                templateUrl: 'home.html',
                 controller: 'mainController'
             })
             // about page
