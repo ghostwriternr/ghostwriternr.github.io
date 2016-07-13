@@ -149,5 +149,5 @@ body {
 
 /* Loader */
 resolveLoader {
-    z-index: 99999999;
+    z-index: 99999;
 }

@@ -5,38 +5,17 @@
         // home page
             .when('/', {
                 templateUrl: 'home.html',
-                controller: 'mainController',
-                resolve: {
-                    delay: function($q, $timeout) {
-                        var delay = $q.defer();
-                        $timeout(delay.resolve, 1500);
-                        return delay.promise;
-                    }
-                }
+                controller: 'mainController'
             })
             // about page
             .when('/about', {
                 templateUrl: 'about.html',
-                controller: 'aboutController',
-                resolve: {
-                    delay: function($q, $timeout) {
-                        var delay = $q.defer();
-                        $timeout(delay.resolve, 1500);
-                        return delay.promise;
-                    }
-                }
+                controller: 'aboutController'
             })
             // contact page
             .when('/projects', {
                 templateUrl: 'projects.html',
-                controller: 'projectsController',
-                resolve: {
-                    delay: function($q, $timeout) {
-                        var delay = $q.defer();
-                        $timeout(delay.resolve, 1500);
-                        return delay.promise;
-                    }
-                }
+                controller: 'projectsController'
             }).otherwise({
                 redirectTo: '/'
             });
@@ -175,7 +154,7 @@
         }
     ]);
     app.directive('showDuringResolve', function($rootScope) {
-
+        console.log("RESOLVELOADER");
         return {
             link: function(scope, element) {
 
@@ -191,11 +170,11 @@
     });
 
     app.directive('resolveLoader', function($rootScope, $timeout) {
-
+        console.log("RESOLVELOADER");
         return {
             restrict: 'E',
             replace: true,
-            template: '<div class="alert alert-success ng-hide"><strong>Welcome!</strong> Content is loading, please hold.</div>',
+            template: '<div class="ng-hide"><strong>Welcome!</strong> Content is loading, please hold.</div>',
             link: function(scope, element) {
 
                 $rootScope.$on('$routeChangeStart', function(event, currentRoute, previousRoute) {
