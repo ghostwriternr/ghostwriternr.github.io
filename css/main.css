@@ -146,3 +146,8 @@ body {
     margin-left: 0px;
     margin-right: 0px;
 }
+
+/* Loader */
+resolveLoader {
+    z-index: 99999999;
+}

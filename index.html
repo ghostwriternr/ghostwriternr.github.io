@@ -29,10 +29,9 @@
     <div ng-controller="ParticlesController">
         <div id="particles-js" class="particlesJS"></div>
     </div>
-    <div ng-show='stateIsLoading' style="z-index=100000;">
-        <strong>Loading.</strong>
-    </div>
-    <div class="page {{ pageClass }}" ng-view style="z-index: 10000;"></div>
+    <resolve-loader></resolve-loader>
+    <div ng-view class="page {{ pageClass }} fadein" style="z-index: 10000;"></div>
+    <!-- <div class="page {{ pageClass }}" ng-view style="z-index: 10000;"></div> -->
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')

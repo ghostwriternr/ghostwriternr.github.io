@@ -1,33 +1,44 @@
 (function() {
     var app = angular.module('ghostPS', ['ngRoute', 'ngAnimate', 'ngMessages']);
-    app.run(['$rootScope', '$state', function($rootScope, $state) {
-
-        $rootScope.$on('$stateChangeStart', function() {
-            $rootScope.stateIsLoading = true;
-        });
-
-
-        $rootScope.$on('$stateChangeSuccess', function() {
-            $rootScope.stateIsLoading = false;
-        });
-
-    }]);
     app.config(function($routeProvider, $locationProvider) {
         $routeProvider
         // home page
             .when('/', {
                 templateUrl: 'home.html',
-                controller: 'mainController'
+                controller: 'mainController',
+                resolve: {
+                    delay: function($q, $timeout) {
+                        var delay = $q.defer();
+                        $timeout(delay.resolve, 1500);
+                        return delay.promise;
+                    }
+                }
             })
             // about page
             .when('/about', {
                 templateUrl: 'about.html',
-                controller: 'aboutController'
+                controller: 'aboutController',
+                resolve: {
+                    delay: function($q, $timeout) {
+                        var delay = $q.defer();
+                        $timeout(delay.resolve, 1500);
+                        return delay.promise;
+                    }
+                }
             })
             // contact page
             .when('/projects', {
                 templateUrl: 'projects.html',
-                controller: 'projectsController'
+                controller: 'projectsController',
+                resolve: {
+                    delay: function($q, $timeout) {
+                        var delay = $q.defer();
+                        $timeout(delay.resolve, 1500);
+                        return delay.promise;
+                    }
+                }
+            }).otherwise({
+                redirectTo: '/'
             });
 
         // use the HTML5 History API
@@ -163,4 +174,42 @@
             $scope.pageClass = 'page-projects';
         }
     ]);
+    app.directive('showDuringResolve', function($rootScope) {
+
+        return {
+            link: function(scope, element) {
+
+                element.addClass('ng-hide');
+
+                var unregister = $rootScope.$on('$routeChangeStart', function() {
+                    element.removeClass('ng-hide');
+                });
+
+                scope.$on('$destroy', unregister);
+            }
+        };
+    });
+
+    app.directive('resolveLoader', function($rootScope, $timeout) {
+
+        return {
+            restrict: 'E',
+            replace: true,
+            template: '<div class="alert alert-success ng-hide"><strong>Welcome!</strong> Content is loading, please hold.</div>',
+            link: function(scope, element) {
+
+                $rootScope.$on('$routeChangeStart', function(event, currentRoute, previousRoute) {
+                    if (previousRoute) return;
+
+                    $timeout(function() {
+                        element.removeClass('ng-hide');
+                    });
+                });
+
+                $rootScope.$on('$routeChangeSuccess', function() {
+                    element.addClass('ng-hide');
+                });
+            }
+        };
+    });
 })();
