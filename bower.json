@@ -1,12 +1,12 @@
 {
   "name": "ghostwriternr.github.io",
-  "homepage": "https://github.com/ghostwriternr/ghostwriternr.github.io",
   "authors": [
-    "ghostwriternr <ghostwriternr@gmail.com>"
+    "Naresh <ghostwriternr@gmail.com>"
   ],
-  "description": "bower packages for my personal site",
+  "description": "My personal site",
   "main": "",
   "license": "MIT",
+  "homepage": "http://ghostwriternr.me/",
   "private": true,
   "ignore": [
     "**/.*",
@@ -16,11 +16,16 @@
     "tests"
   ],
   "dependencies": {
+    "angular": "1.5.6",
+    "angular-animate": "^1.5.7",
+    "angular-aria": "^1.5.7",
     "angular-material": "^1.0.9",
-    "particles.js": "^2.0.0",
-    "bootstrap": "^3.3.6",
-    "jquery": "^2.2.4",
     "angular-material-icons": "^0.7.0",
-    "angular-route": "^1.5.6"
+    "angular-route": "^1.5.7",
+    "particles.js": "^2.0.0"
+  },
+  "resolutions": {
+    "angular": "1.5.7",
+    "angular-aria": "^1.5.7"
   }
 }

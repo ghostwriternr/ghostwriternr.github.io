@@ -1,0 +1,148 @@
+@font-face {
+    font-family: junction regular;
+    src: url('../fonts/Junction.otf');
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Vertical centering */
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.content-child {
+    flex: 0 0 100%;
+    align-self: center;
+}
+
+.vertical-center {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    width: 100%;
+}
+
+
+/* Main text styling */
+
+#MainTitle {
+    font-family: junction regular;
+    z-index: 999;
+    position: relative;
+    color: white;
+    font-weight: 10;
+    font-size: 2vh;
+}
+
+
+/* Page animations */
+
+.ng-enter {
+    z-index: 8888;
+}
+
+.ng-leave {
+    z-index: 9999;
+}
+
+
+/* Page styling */
+
+.page-home {
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.page-about {
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.page-projects {
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.page-about.ng-enter {
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-animation: rotateRoomTopIn .8s both ease;
+    animation: rotateRoomTopIn .8s both ease;
+}
+
+.page-about.ng-leave {
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-animation: rotateRoomBottomOut .8s both ease;
+    animation: rotateRoomBottomOut .8s both ease;
+}
+
+.page-projects.ng-enter {
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-animation: rotateRoomTopIn .8s both ease;
+    animation: rotateRoomTopIn .8s both ease;
+}
+
+.page-projects.ng-leave {
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-animation: rotateRoomBottomOut .8s both ease;
+    animation: rotateRoomBottomOut .8s both ease;
+}
+
+
+/* Bootstrap tinkering */
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
