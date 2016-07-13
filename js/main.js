@@ -1,5 +1,17 @@
 (function() {
     var app = angular.module('ghostPS', ['ngRoute', 'ngAnimate', 'ngMessages']);
+    app.run(['$rootScope', '$state', function($rootScope, $state) {
+
+        $rootScope.$on('$stateChangeStart', function() {
+            $rootScope.stateIsLoading = true;
+        });
+
+
+        $rootScope.$on('$stateChangeSuccess', function() {
+            $rootScope.stateIsLoading = false;
+        });
+
+    }]);
     app.config(function($routeProvider, $locationProvider) {
         $routeProvider
         // home page
