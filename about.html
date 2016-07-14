@@ -1,6 +1,9 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-orientation-override.css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Poppins">
+<link rel="stylesheet" type="text/css" href="css/ionicons.css">
+<style>
+@import 'https://fonts.googleapis.com/css?family=Fjalla+One|Kaushan+Script|Open+Sans|Oswald|Pacifico|Poppins';
+</style>
 <style type="text/css">
 * {
     margin: 0;
@@ -46,7 +49,49 @@ body {
     right: 0;
 }
 
+#aboutback {
+    position: relative;
+    margin-top: 2vh;
+    left: 0;
+    right: 0;
+}
+
 #aboutwelcome {
+    position: relative;
+    margin-top: 3vh;
+    left: 0;
+    right: 0;
+}
+
+#abouttitle {
+    position: relative;
+    margin-top: 2vh;
+    left: 0;
+    right: 0;
+}
+
+#aboutdescdesk {
+    position: relative;
+    margin-top: 2vh;
+    left: 0;
+    right: 0;
+}
+
+#aboutdescmob {
+    position: relative;
+    margin-top: 32vh;
+    left: 0;
+    right: 0;
+}
+
+#aboutimg {
+    position: relative;
+    margin-top: 5vh;
+    left: 0;
+    right: 0;
+}
+
+#iconlinks {
     position: relative;
     margin-top: 5vh;
     left: 0;
@@ -60,6 +105,12 @@ body {
     font-size: 8vh;
 }
 
+#intro text {
+    color: #111;
+    font-family: 'Fjalla One', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
 .fitdiv {
     position: absolute;
     top: -9999px;
@@ -68,13 +119,55 @@ body {
     right: -9999px;
     margin: auto;
 }
+
+i {
+    padding: 2vh;
+}
 </style>
 
 <body>
     <div class="all-content" ng-controller="aboutController" ng-cloak="" ng-app="ghostPS">
+        <div class="row visible-xs visible-sm" id="aboutback">
+            <div class="col-xs-12 text-center">
+                <i class="icon ion-ios-arrow-up" style="color: #111;font-size: 8vh;"></i>
+            </div>
+        </div>
         <div class="row" id="aboutwelcome">
-            <div class="col-xs-12 col-md-offset-1 col-md-2 text-center" id="namaste">
+            <div class="visible-md visible-lg col-xs-0 col-md-1 text-right">
+                <i class="icon ion-ios-arrow-up" style="color: #111;font-size: 8vh;"></i>
+            </div>
+            <div class="col-xs-12 col-md-2 text-center" id="namaste">
                 <text>नमस्ते</text>
+            </div>
+        </div>
+        <div class="row" id="abouttitle" style="top: -4vh;">
+            <div class="col-xs-12 col-md-offset-7 col-md-4 text-center" id="intro">
+                <text style="font-size: 8vh;">Hi, I'm Naresh</text>
+            </div>
+        </div>
+        <div class="row visible-md visible-lg" id="aboutdescdesk">
+            <div class="col-xs-12 col-md-offset-7 col-md-4 text-center" id="intro">
+                <text style="font-size: 3vh;">I am a developer, writer and designer, aiming to bring the best of these 3 worlds together through Computer Science. I enjoy programming and listening to music.</text>
+            </div>
+        </div>
+        <div class="row visible-xs visible-sm" id="aboutdescmob">
+            <div class="col-xs-12 col-md-offset-6 col-md-6 text-center" id="intro">
+                <text style="font-size: 2.5vh;">I am a developer, writer and designer, aiming to bring the best of these 3 worlds together through Computer Science. I enjoy programming and listening to music.</text>
+            </div>
+        </div>
+        <div class="row visible-md visible-lg" id="aboutimg">
+            <div class="col-xs-12 col-md-offset-7 col-md-4 text-center" id="profileimg">
+                <img src="img/about-bw.jpeg" alt="Me!" class="img-thumbnail" style="max-height: 30vh;width: auto;">
+            </div>
+        </div>
+        <div class=row id="iconlinks">
+            <div class="col-xs-12 col-md-offset-7 col-md-4 text-center">
+                <a href='https://github.com/ghostwriternr/' target="_blank" style="target-new: tab;"><i class="icon ion-social-github" style="color: #111;font-size: 5vh;"></i></a>
+                <a href='www.linkedin.com/in/naresh-ramesh' target="_blank" style="target-new: tab;"><i class="icon ion-social-linkedin" style="color: #111;font-size: 5vh;"></i></a>
+                <a href='https://www.facebook.com/naresh.ramesh' target="_blank" style="target-new: tab;"><i class="icon ion-social-facebook" style="color: #111;font-size: 5vh;"></i></a>
+                <a href='http://ghostwriternr.me/blog/' target="_blank" style="target-new: tab;"><i class="icon ion-edit" style="color: #111;font-size: 5vh;"></i></a>
+                <a href='https://www.instagram.com/naresh_r/' target="_blank" style="target-new: tab;"><i class="icon ion-social-instagram-outline" style="color: #111;font-size: 5vh;"></i></a>
+                <a href='mailto:nareshmdu@gmail.com' target="_blank" style="target-new: tab;"><i class="icon ion-ios-email" style="color: #111;font-size: 5vh;"></i></a>
             </div>
         </div>
 </body>
