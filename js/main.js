@@ -154,7 +154,7 @@
         }
     ]);
     app.directive('showDuringResolve', function($rootScope) {
-        console.log("RESOLVELOADER");
+        console.log("SHOWDURINGRESOLVE");
         return {
             link: function(scope, element) {
 
@@ -174,7 +174,7 @@
         return {
             restrict: 'E',
             replace: true,
-            template: '<div class="ng-hide"><strong>Welcome!</strong> Content is loading, please hold.</div>',
+            template: '<div class="alert alert-success ng-hide"><strong>Welcome!</strong> Content is loading, please hold.</div>',
             link: function(scope, element) {
 
                 $rootScope.$on('$routeChangeStart', function(event, currentRoute, previousRoute) {

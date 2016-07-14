@@ -147,7 +147,11 @@ body {
     margin-right: 0px;
 }
 
+
 /* Loader */
-resolveLoader {
-    z-index: 99999;
+
+resolve-loader {
+    z-index: 999;
+    color: white;
+    font-size: 3vh;
 }
