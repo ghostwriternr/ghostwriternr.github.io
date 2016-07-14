@@ -1,9 +1,3 @@
-@font-face {
-    font-family: junction regular;
-    src: url('../fonts/Junction.otf');
-}
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -92,22 +86,28 @@ body {
 
 .page-home {
     bottom: 0;
-    position: absolute;
+    left: 0;
+    right: 0;
     top: 0;
+    position: absolute;
     width: 100%;
 }
 
 .page-about {
     bottom: 0;
-    position: absolute;
+    left: 0;
+    right: 0;
     top: 0;
+    position: absolute;
     width: 100%;
 }
 
 .page-projects {
     bottom: 0;
-    position: absolute;
+    left: 0;
+    right: 0;
     top: 0;
+    position: absolute;
     width: 100%;
 }
 

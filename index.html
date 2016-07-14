@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/gradients.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/particles.css">
     <link rel="stylesheet" type="text/css" href="css/animations.css">
@@ -45,6 +46,13 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/particles.js/particles.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var gradients = ['virginamerica', 'backtothefuture', 'clearsky', 'turquiseflow', 'twitch', 'servquick', 'soundcloud', 'manofsteel', 'dancetoforget', 'shadownight', 'thestrain', 'kyoto', 'influenza', 'shrimpy', 'sunrise', 'bloodymary', 'intuitivepurple', 'playingwithreds'];
+        var chosenone = gradients[Math.floor(Math.random() * gradients.length)];
+        $('#particles-js').addClass(chosenone);
+    });
+    </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <!--     <script>
     (function(b, o, i, l, e, r) {
