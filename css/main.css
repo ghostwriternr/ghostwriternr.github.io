@@ -29,6 +29,7 @@ body {
     min-height: 100%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 
@@ -111,32 +112,34 @@ body {
     width: 100%;
 }
 
+.page-home.ng-enter {
+    -webkit-animation: moveFromTopFade .7s ease both;
+    animation: moveFromTopFade .7s ease both;
+}
+
+.page-home.ng-leave {
+    -webkit-animation: moveToTopFade .7s ease both;
+    animation: moveToTopFade .7s ease both;
+}
+
 .page-about.ng-enter {
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    -webkit-animation: rotateRoomTopIn .8s both ease;
-    animation: rotateRoomTopIn .8s both ease;
+    -webkit-animation: moveFromBottomFade .7s ease both;
+    animation: moveFromBottomFade .7s ease both;
 }
 
 .page-about.ng-leave {
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    -webkit-animation: rotateRoomBottomOut .8s both ease;
-    animation: rotateRoomBottomOut .8s both ease;
+    -webkit-animation: moveToBottomFade .7s ease both;
+    animation: moveToBottomFade .7s ease both;
 }
 
 .page-projects.ng-enter {
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    -webkit-animation: rotateRoomTopIn .8s both ease;
-    animation: rotateRoomTopIn .8s both ease;
+    -webkit-animation: moveFromBottomFade .7s ease both;
+    animation: moveFromBottomFade .7s ease both;
 }
 
 .page-projects.ng-leave {
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    -webkit-animation: rotateRoomBottomOut .8s both ease;
-    animation: rotateRoomBottomOut .8s both ease;
+    -webkit-animation: moveToBottomFade .7s ease both;
+    animation: moveToBottomFade .7s ease both;
 }
 
 
@@ -154,4 +157,11 @@ resolve-loader {
     z-index: 999;
     color: white;
     font-size: 3vh;
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    display: none;
 }
