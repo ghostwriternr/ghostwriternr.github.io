@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-orientation-override.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Poppins">
 <style type="text/css">
 * {
     margin: 0;
@@ -27,12 +28,17 @@ body {
 
 .all-content {
     height: 100%;
-    background-color: black;
+    background: url(img/aboutbg/dlanham-Cardinal.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .caption {
     width: 100%;
-    bottom: .3rem;
+    /*bottom: .3rem;*/
+    bottom: 0;
     position: absolute;
     background: #000;
     background: -webkit-linear-gradient(bottom, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -52,10 +58,11 @@ body {
     background-color: black;
 }
 
-.caption h4 {
+.caption text {
     color: #fff;
-    font-family: 'Tangerine', serif;
+    font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
+    font-size: 5vh;
 }
 
 .fitdiv {
@@ -67,8 +74,10 @@ body {
     margin: auto;
 }
 
-::-webkit-scrollbar {
-    display: none;
+.row {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 }
 </style>
 
@@ -76,11 +85,10 @@ body {
     <div class="all-content" ng-controller="aboutController" ng-cloak="" ng-app="ghostPS">
         <div class="row">
             <div class="hidden-xs hidden-sm col-md-4">
-                <!-- <img class="img-responsive" src="img/about-bw.jpeg" alt="Me!"> -->
                 <div class="thumbnail text-center">
                     <img alt="" class="img-responsive fitdiv" src="img/about-bw.jpeg" alt="Me!">
                     <div class="caption">
-                        <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                        <text>नमस्ते</text>
                     </div>
                 </div>
             </div>

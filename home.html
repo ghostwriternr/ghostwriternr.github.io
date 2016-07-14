@@ -1,7 +1,5 @@
-<!-- Cuz why not? :P -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Poppins">
 <style type="text/css">
 * {
     margin: 0;
@@ -27,21 +25,21 @@ body {
     height: 100%;
 }
 
-#MainTitle {
-    font-family: 'Open Sans', sans-serif;
+.row {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-::-webkit-scrollbar {
-    display: none;
+#MainTitle {
+    font-family: 'Open Sans', sans-serif;
 }
 </style>
 <div class="content-child vertical-center" ng-controller="mainController">
     <div class="row">
         <div class="col-xs-12 col-md-6 vcenter">
-            <div class="row">
-                <div class="col-xs-0 col-md-1">
-                </div>
-                <div class="col-xs-12 col-md-11">
+            <div id="mainrow" class="row">
+                <div class="col-xs-offset-1 col-xs-11 col-md-offset-2 col-md-10">
                     <div id="MainTitle">
                         <p style="font-size: 5vh;">Naresh R</p>
                         <p style="font-size: 3vh;"><i>Student at IIT Kharagpur</i></p>
