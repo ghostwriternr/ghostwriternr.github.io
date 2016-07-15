@@ -1,5 +1,5 @@
 (function() {
-    var app = angular.module('ghostPS', ['ngRoute', 'ngAnimate', 'ngMessages']);
+    var app = angular.module('ghostPS', ['ngRoute', 'ngAnimate', 'ngMessages', 'angular-scroll-animate']);
     app.config(function($routeProvider, $locationProvider) {
         $routeProvider
         // home page
@@ -160,6 +160,15 @@
             $scope.goNext = function(hash) {
                 $location.path(hash);
             }
+            $scope.animateElementIn = function($el) {
+                $el.removeClass('not-visible');
+                $el.addClass('animated zoomIn');
+            };
+
+            $scope.animateElementOut = function($el) {
+                $el.addClass('not-visible');
+                $el.removeClass('animated zoomIn');
+            };
         }
     ]);
     app.directive('showDuringResolve', function($rootScope) {

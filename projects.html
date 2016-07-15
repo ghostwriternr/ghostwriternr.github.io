@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="css/bootstrap-orientation-override.css">
 <link rel="stylesheet" type="text/css" href="css/ionicons.css">
 <link rel="stylesheet" type="text/css" href="css/parallaxnav.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
 <style>
 @import 'https://fonts.googleapis.com/css?family=Fjalla+One|Kaushan+Script|Open+Sans|Oswald|Pacifico|Poppins';
 </style>
@@ -38,6 +39,8 @@ body {
 
 .all-content {
     background-color: white;
+    position: absolute;
+    top: 0;
 }
 
 .caption {
@@ -79,6 +82,10 @@ body {
     margin: auto;
 }
 
+.not-visible {
+    visibility: hidden;
+}
+
 .small-logo-container a {
     font-family: 'Pacifico', cursive;
 }
@@ -92,14 +99,14 @@ body {
     text-align: center;
 }
 
-#aboutback {
+#projectsback {
     position: relative;
     margin-top: 2vh;
     left: 0;
     right: 0;
 }
 
-#aboutwelcome {
+#projectswelcome {
     position: relative;
     margin-top: 3vh;
     left: 0;
@@ -112,9 +119,9 @@ i:hover {
 </style>
 
 <body>
-    <div class="all-content" id="projectscontainer" ng-controller="aboutController" ng-cloak="" ng-app="ghostPS">
+    <div class="all-content" id="projectscontainer" ng-controller="projectsController" ng-cloak="" ng-app="ghostPS">
         <div class="row visible-xs visible-sm" id="projectsback">
-            <div class="col-xs-12 text-center">
+            <div class="col-xs-12 text-center" style="z-index: 10;">
                 <i class="icon ion-ios-arrow-up" style="color: #111;font-size: 8vh;" ng-click='goNext("/")'></i>
             </div>
         </div>
@@ -124,11 +131,11 @@ i:hover {
             </div>
         </div>
         <!-- Fixed navbar -->
-        <div class="visible-xs visible-sm navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="visible-xs visible-sm navbar navbar-inverse navbar-fixed-top" style="z-index: -1;" role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <div class="small-logo-container">
-                        <a class="small-logo" href="#">Projects</a>
+                        <a class="small-logo">Projects</a>
                     </div>
                 </div>
             </div>
@@ -146,23 +153,53 @@ i:hover {
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-offset-1 col-xs-10">
-                <h2>Lorem ipsum</h2>
-                <p>Dolor sit amet, consectetur adipisicing elit. Id maxime repellat repellendus porro voluptas laudantium similique eveniet quis perferendis beatae commodi sunt ullam provident dolorum doloribus esse accusamus dolores. Corrupti.</p>
-                <p>Consectetur incidunt voluptatibus ipsa nisi esse eos deleniti repudiandae at quo sit praesentium nemo optio perspiciatis sequi quaerat voluptates minus reprehenderit doloremque accusamus et quisquam nesciunt sunt consequatur explicabo excepturi!</p>
-                <p>Sequi facilis ea dolor asperiores quibusdam eveniet optio corporis et accusantium voluptatem architecto quis iste recusandae molestias dolorem soluta ex blanditiis illo impedit laborum iusto? Iure sapiente eos molestiae est?</p>
-                <p>Numquam delectus recusandae nesciunt rem itaque harum corporis maxime hic iste molestias adipisci excepturi ullam libero necessitatibus cum eum modi minus obcaecati est nemo quia velit earum perferendis consectetur porro?</p>
-                <p>Accusamus dicta consequatur quos ipsum rerum tempora assumenda ex excepturi itaque soluta magnam debitis voluptatibus neque eos porro. Neque tempora ea beatae delectus facere quas voluptas accusamus maxime enim consequuntur.</p>
-                <p>Saepe obcaecati facilis dolore numquam nam quod laudantium. Rerum esse voluptas eum aut porro beatae adipisci exercitationem ab voluptatum corporis quas placeat sapiente nisi ut officia eaque debitis. Corrupti eveniet!</p>
-                <p>Eius natus numquam tempore alias ipsam commodi aut similique corporis beatae velit maxime obcaecati voluptatibus cum repudiandae minus inventore doloremque optio saepe nihil eum reprehenderit quas consequuntur perspiciatis quo quam.</p>
-                <p>Ea perspiciatis incidunt unde ipsam cupiditate necessitatibus magnam quod odit. Beatae adipisci non praesentium tenetur dolores fugit repellat consequuntur unde aperiam eligendi ipsa doloribus corporis officiis ipsam quod numquam assumenda!</p>
-                <p>Ullam ut ex cum corporis numquam quia hic aut nisi itaque laboriosam eaque earum commodi nulla magni voluptate reiciendis laborum esse odit blanditiis aperiam veniam eos velit similique eveniet ad.</p>
-                <p>Esse veritatis inventore explicabo hic consequuntur ex autem praesentium quaerat blanditiis illo deleniti dolorum porro tenetur. Repellat sed repellendus natus cum molestias numquam vitae vel eum voluptatem praesentium tempora quae.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nostrum consequatur odit eius blanditiis sit mollitia ut porro cumque nam repudiandae accusantium nisi excepturi corporis incidunt inventore ipsam? Officiis eum!</p>
-                <p>Nostrum minus dicta quod totam autem ipsum illo velit labore obcaecati est ducimus ullam sit iusto ea pariatur sint nulla perferendis modi dolorum cumque non laboriosam ratione maiores possimus numquam!</p>
-                <p>Deserunt ex dolor atque sapiente suscipit aspernatur et iste necessitatibus enim magni blanditiis quaerat rerum perspiciatis expedita magnam nihil neque natus quos quidem veritatis eligendi dolorem itaque laboriosam beatae dolores!</p>
-                <p>Nostrum tenetur rem cum tempora sapiente at possimus assumenda ex quos illum facilis quibusdam facere voluptatum. Necessitatibus tempore animi earum inventore quaerat sit velit totam rem nulla consequuntur dolorem architecto!</p>
-                <p>Illum doloremque ipsa magni fugiat explicabo nam officiis expedita architecto voluptatem beatae deserunt optio iusto nostrum facere voluptatum. Tempora dolore quasi vero aut voluptatem eaque nobis iusto enim dignissimos molestias!</p>
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-5 animated zoomIn" when-visible="animateElementIn">
+                <div class="jumbotron" style="background: #39CCCC;color: white;">
+                    <h1>Heading</h1>
+                    <p>Paragraph</p>
+                </div>
+            </div>
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-5 animated zoomIn" when-visible="animateElementIn">
+                <div class="jumbotron" style="background: #B10DC9;color: white;">
+                    <h1>Heading</h1>
+                    <p>Paragraph</p>
+                </div>
+            </div>
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-5 animated zoomIn" when-visible="animateElementIn">
+                <div class="jumbotron" style="background: #FF851B;color: white;">
+                    <h1>Heading</h1>
+                    <p>Paragraph</p>
+                </div>
+            </div>
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-5 animated zoomIn" when-visible="animateElementIn">
+                <div class="jumbotron" style="background: #001f3f;color: white;">
+                    <h1>Heading</h1>
+                    <p>Paragraph</p>
+                </div>
+            </div>
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-5 not-visible" when-visible="animateElementIn">
+                <div class="jumbotron" style="background: #39CCCC;color: white;">
+                    <h1>Heading</h1>
+                    <p>Paragraph</p>
+                </div>
+            </div>
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-5 not-visible" when-visible="animateElementIn">
+                <div class="jumbotron" style="background: #B10DC9;color: white;">
+                    <h1>Heading</h1>
+                    <p>Paragraph</p>
+                </div>
+            </div>
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-5 not-visible" when-visible="animateElementIn">
+                <div class="jumbotron" style="background: #FF851B;color: white;">
+                    <h1>Heading</h1>
+                    <p>Paragraph</p>
+                </div>
+            </div>
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-5 not-visible" when-visible="animateElementIn">
+                <div class="jumbotron" style="background: #001f3f;color: white;">
+                    <h1>Heading</h1>
+                    <p>Paragraph</p>
+                </div>
             </div>
         </div>
     </div>
