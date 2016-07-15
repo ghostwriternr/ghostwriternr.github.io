@@ -138,19 +138,28 @@
             "retina_detect": true
         });
     });
-    app.controller('mainController', ['$scope', '$http', '$sce',
-        function($scope, $http, $sce) {
+    app.controller('mainController', ['$scope', '$http', '$sce', '$location',
+        function($scope, $http, $sce, $location) {
             $scope.pageClass = 'page-home';
+            $scope.goNext = function(hash) {
+                $location.path(hash);
+            }
         }
     ]);
-    app.controller('aboutController', ['$scope', '$http', '$sce',
-        function($scope, $http, $sce) {
+    app.controller('aboutController', ['$scope', '$http', '$sce', '$location',
+        function($scope, $http, $sce, $location) {
             $scope.pageClass = 'page-about';
+            $scope.goNext = function(hash) {
+                $location.path(hash);
+            }
         }
     ]);
-    app.controller('projectsController', ['$scope', '$http', '$sce',
-        function($scope, $http, $sce) {
+    app.controller('projectsController', ['$scope', '$http', '$sce', '$location',
+        function($scope, $http, $sce, $location) {
             $scope.pageClass = 'page-projects';
+            $scope.goNext = function(hash) {
+                $location.path(hash);
+            }
         }
     ]);
     app.directive('showDuringResolve', function($rootScope) {
