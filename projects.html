@@ -38,7 +38,7 @@ body {
 }
 
 .all-content {
-    background-color: white;
+    background-color: #FFDC00;
     position: absolute;
     top: 0;
 }
@@ -135,6 +135,15 @@ i:hover {
     color: rgba(0, 0, 0, 0.5);
 }
 
+#githubicon.hideicon {
+    color: rgba(0, 0, 0, 0);
+}
+
+#githubicon.hideicon:hover {
+    color: rgba(0, 0, 0, 0);
+    cursor: default;
+}
+
 .projdescbox {
     background: rgba(0, 0, 0, 0.2);
     margin: 1vh -2vw 1vh -2vw;
@@ -174,10 +183,26 @@ i:hover {
         </div>
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">
-                <hr>
+                <hr style="border: none;height: 2px;color: #fff;background-color: #fff;">
             </div>
         </div>
         <div class="row masonry-container">
+            <div class="projectbox col-xs-12 col-md-6 animated zoomIn" when-visible="animateElementIn">
+                <div class="jumbotron" style="background: #39CCCC;color: white;">
+                    <div class="projlinks">
+                        <div class="col-xs-offset-10 col-xs-2 text-right"><a href='' target="_blank" style="target-new: tab;"><i id="githubicon" class="icon ion-social-github hideicon" style="position: relative;font-size: 4vh;z-index: 2;"></i></a></div>
+                    </div>
+                    <div class="projdetails" style="position: relative;top: -4.5vh;z-index: 1;">
+                        <text style="font-size: 2.5vh;">B. Tech Project</text>
+                        <br>
+                        <text style="font-size: 4vh;">Data extraction from biomedical literature for automating systematic reviews</text>
+                        <div class="projdescbox">Worked on feature detection of a particular class of text (specifically, inclusion and exclusion criteria for patients) from a huge collection of biomedical literature using NLP Techniques with high precision and recall.
+                            <br>Methods used include Support Vector Classifier (Scikit-learn), Latent Dirichlet Allocation (LDA) and Weighted Keyword Matching.
+                        </div>
+                        <text style="font-size: 2vh;">Under the guidance of <b>Prof. Pawan Goyal</b></text>
+                    </div>
+                </div>
+            </div>
             <div class="projectbox col-xs-12 col-md-6 animated zoomIn" when-visible="animateElementIn">
                 <div class="jumbotron" style="background: #39CCCC;color: white;">
                     <div class="projlinks">
@@ -186,52 +211,98 @@ i:hover {
                     <div class="projdetails" style="position: relative;top: -4.5vh;z-index: 1;">
                         <text style="font-size: 2.5vh;">DBMS term project</text>
                         <br>
-                        <text style="font-size: 5vh;">Selene</text>
-                        <div class="projdescbox">Built an app that serves as a social music-recommendation engine based on YouTube that extracts usage data from Selene users who fall under a branch length of 5 nodes in a user’s Facebook friends graph, and based on your preferred genre, recommends music you might like.</div>
+                        <text style="font-size: 4vh;">Selene</text>
+                        <div class="projdescbox">An android app that serves as a social music-recommendation engine based on YouTube that extracts usage data from Selene users who fall under a branch length of 5 nodes in a user’s Facebook friends graph, and based on your preferred genre, recommends music you might like.</div>
                         <text style="font-size: 2vh;">Under the guidance of <b>Prof. Pabitra Mitra</b></text>
                     </div>
                 </div>
             </div>
             <div class="projectbox col-xs-12 col-md-6 animated zoomIn" when-visible="animateElementIn">
-                <div class="jumbotron" style="background: #B10DC9;color: white;">
-                    <h1>Heading</h1>
-                    <p>Paragraph</p>
+                <div class="jumbotron" style="background: #39CCCC;color: white;">
+                    <div class="projlinks">
+                        <div class="col-xs-offset-10 col-xs-2 text-right"><a href='https://github.com/sayan1994/IR' target="_blank" style="target-new: tab;"><i id="githubicon" class="icon ion-social-github" style="position: relative;font-size: 4vh;z-index: 2;"></i></a></div>
+                    </div>
+                    <div class="projdetails" style="position: relative;top: -4.5vh;z-index: 1;">
+                        <text style="font-size: 2.5vh;">Information Retrieval term project</text>
+                        <br>
+                        <text style="font-size: 4vh;">Retrieving salient sentences from Reddit AMAs</text>
+                        <div class="projdescbox">A web-based summariser that provides summaries from /r/iAMA with abilities to choose any AMA from a list or through instant search (implemented with Angular autocomplete.)
+                            <br>
+                            <br>After obtaining data from the web crawler, LDA model training was done on the entire dataset and categorised using link flairs on Reddit. k-mean clustering was then used to cluster the questions and answers and summarised using lexrank and summpy. Concept tagging was then done using Alchemy API on each cluster.)</div>
+                        <text style="font-size: 2vh;">Under the guidance of <b>Prof. Pawan Goyal</b></text>
+                    </div>
                 </div>
             </div>
             <div class="projectbox col-xs-12 col-md-6 animated zoomIn" when-visible="animateElementIn">
-                <div class="jumbotron" style="background: #FF851B;color: white;">
-                    <h1>Heading</h1>
-                    <p>Paragraph</p>
-                </div>
-            </div>
-            <div class="projectbox col-xs-12 col-md-6 animated zoomIn" when-visible="animateElementIn">
-                <div class="jumbotron" style="background: #001f3f;color: white;">
-                    <h1>Heading</h1>
-                    <p>Paragraph</p>
+                <div class="jumbotron" style="background: #39CCCC;color: white;">
+                    <div class="projlinks">
+                        <div class="col-xs-offset-10 col-xs-2 text-right"><a href='https://github.com/ghostwriternr/Opensoft-2016' target="_blank" style="target-new: tab;"><i id="githubicon" class="icon ion-social-github" style="position: relative;font-size: 4vh;z-index: 2;"></i></a></div>
+                    </div>
+                    <div class="projdetails" style="position: relative;top: -4.5vh;z-index: 1;">
+                        <text style="font-size: 2.5vh;">OpenSoft 2016</text>
+                        <br>
+                        <text style="font-size: 4vh;">Data Extractor from 2D plots</text>
+                        <div class="projdescbox">Worked on a team of 15 as a part of my hostel’s team in OpenSoft 2016 to build a graph extractor that detects plots in any PDF and plots the values in a tabular format.
+                            <br>
+                            <br>Was primarily responsible for detecting and scaling the ticks from the color segregated image and scale it appropriately using the axis values and generate the plot. Was also solely reponsible for generating the table structure using Python libraries and to fully build a working GUI for the application on Java Swing.</div>
+                    </div>
                 </div>
             </div>
             <div class="projectbox col-xs-12 col-md-6 not-visible" when-visible="animateElementIn">
                 <div class="jumbotron" style="background: #39CCCC;color: white;">
-                    <h1>Heading</h1>
-                    <p>Paragraph</p>
+                    <div class="projlinks">
+                        <div class="col-xs-offset-10 col-xs-2 text-right"><a href='http://ghostwriternr.me/dbmsass3/' target="_blank" style="target-new: tab;"><i id="githubicon" class="icon ion-social-github" style="position: relative;font-size: 4vh;z-index: 2;"></i></a></div>
+                    </div>
+                    <div class="projdetails" style="position: relative;top: -4.5vh;z-index: 1;">
+                        <text style="font-size: 2.5vh;">DBMS project</text>
+                        <br>
+                        <text style="font-size: 4vh;">Studious | STUDY + DISCOVER</text>
+                        <div class="projdescbox">A complete course management system built upon the MEAN stack, that supports major features that one expects from an online education platform. Studious supports 4 types of users: student, faculty, parent and administrator.
+                            <br>
+                            <br>The site takes full advantage of Twitter Bootstrap and is fully responsive. Messages and Notifications are updated in real-time using socket.io</div>
+                        <text style="font-size: 2vh;">Under the guidance of <b>Prof. Pabitra Mitra</b></text>
+                    </div>
                 </div>
             </div>
             <div class="projectbox col-xs-12 col-md-6 not-visible" when-visible="animateElementIn">
-                <div class="jumbotron" style="background: #B10DC9;color: white;">
-                    <h1>Heading</h1>
-                    <p>Paragraph</p>
+                <div class="jumbotron" style="background: #39CCCC;color: white;">
+                    <div class="projlinks">
+                        <div class="col-xs-offset-10 col-xs-2 text-right"><a href='https://github.com/auviitkgp' target="_blank" style="target-new: tab;"><i id="githubicon" class="icon ion-social-github" style="position: relative;font-size: 4vh;z-index: 2;"></i></a></div>
+                    </div>
+                    <div class="projdetails" style="position: relative;top: -4.5vh;z-index: 1;">
+                        <text style="font-size: 2.5vh;">Research Project</text>
+                        <br>
+                        <text style="font-size: 4vh;">Kraken 3.0 (Autonomous Mobile Robot)</text>
+                        <div class="projdescbox">Built an app that serves as a social music-recommendation engine based on YouTube that extracts usage data from Selene users who fall under a branch length of 5 nodes in a user’s Facebook friends graph, and based on your preferred genre, recommends music you might like.</div>
+                        <text style="font-size: 2vh;">Under the guidance of <b>Prof. C. S. Kumar</b></text>
+                    </div>
                 </div>
             </div>
             <div class="projectbox col-xs-12 col-md-6 not-visible" when-visible="animateElementIn">
-                <div class="jumbotron" style="background: #FF851B;color: white;">
-                    <h1>Heading</h1>
-                    <p>Paragraph</p>
+                <div class="jumbotron" style="background: #39CCCC;color: white;">
+                    <div class="projlinks">
+                        <div class="col-xs-offset-10 col-xs-2 text-right"><a href='https://github.com/ghostwriternr/MLAS' target="_blank" style="target-new: tab;"><i id="githubicon" class="icon ion-social-github" style="position: relative;font-size: 4vh;z-index: 2;"></i></a></div>
+                    </div>
+                    <div class="projdetails" style="position: relative;top: -4.5vh;z-index: 1;">
+                        <text style="font-size: 2.5vh;">Software Engineering term project</text>
+                        <br>
+                        <text style="font-size: 4vh;">Medical Lab Automation Software</text>
+                        <div class="projdescbox">Developed a software using JAVA for a Medical Lab Automation System which handles and automates the various requests of the management and patients including the scheduling of tests, managing stocks, etc. with a working sign-in flow in place.</div>
+                        <text style="font-size: 2vh;">Under the guidance of <b>Prof. Pabitra Mitra</b></text>
+                    </div>
                 </div>
             </div>
             <div class="projectbox col-xs-12 col-md-6 not-visible" when-visible="animateElementIn">
-                <div class="jumbotron" style="background: #001f3f;color: white;">
-                    <h1>Heading</h1>
-                    <p>Paragraph</p>
+                <div class="jumbotron" style="background: #39CCCC;color: white;">
+                    <div class="projlinks">
+                        <div class="col-xs-offset-10 col-xs-2 text-right"><a href='' target="_blank" style="target-new: tab;"><i id="githubicon" class="icon ion-social-github hideicon" style="position: relative;font-size: 4vh;z-index: 2;"></i></a></div>
+                    </div>
+                    <div class="projdetails" style="position: relative;top: -4.5vh;z-index: 1;">
+                        <text style="font-size: 2.5vh;">Microsoft Code.Fun.Do</text>
+                        <br>
+                        <text style="font-size: 4vh;">Campus Connexions</text>
+                        <div class="projdescbox">Developed an intra-college social networking app with real time feed from registered users that would serve as a platform for official and unofficial announcements within the college. Windows Azure was used for database management and develepment was primarily done with Visual Studio</div>
+                    </div>
                 </div>
             </div>
         </div>
