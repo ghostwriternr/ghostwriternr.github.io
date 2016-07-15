@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
+    <title ng-bind="$root.title">Naresh</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -49,7 +49,7 @@
     <script src="js/main.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
-        var gradients = ['virginamerica', 'backtothefuture', 'clearsky', 'turquiseflow', 'twitch', 'servquick', 'soundcloud', 'manofsteel', 'dancetoforget', 'shadownight', 'thestrain', 'kyoto', 'influenza', 'shrimpy', 'sunrise', 'bloodymary', 'intuitivepurple', 'playingwithreds'];
+        var gradients = ['redpink'];
         var chosenone = gradients[Math.floor(Math.random() * gradients.length)];
         $('#particles-js').addClass(chosenone);
     });

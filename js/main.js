@@ -5,17 +5,20 @@
         // home page
             .when('/', {
                 templateUrl: 'home.html',
-                controller: 'mainController'
+                controller: 'mainController',
+                title: 'Naresh'
             })
             // about page
             .when('/about', {
                 templateUrl: 'about.html',
-                controller: 'aboutController'
+                controller: 'aboutController',
+                title: 'About me'
             })
             // contact page
             .when('/projects', {
                 templateUrl: 'projects.html',
-                controller: 'projectsController'
+                controller: 'projectsController',
+                title: 'Projects'
             }).otherwise({
                 redirectTo: '/'
             });
@@ -75,7 +78,7 @@
                     }
                 },
                 "line_linked": {
-                    "enable": false,
+                    "enable": true,
                     "distance": 150,
                     "color": "#ffffff",
                     "opacity": 0.4,
@@ -209,4 +212,9 @@
             }
         };
     });
+    app.run(function($route, $rootScope) {
+        $rootScope.$on("$routeChangeSuccess", function(currentRoute, previousRoute) {
+            $rootScope.title = $route.current.title;
+        });
+    })
 })();
