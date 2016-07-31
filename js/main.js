@@ -6,7 +6,7 @@
             .when('/', {
                 templateUrl: 'home.html',
                 controller: 'mainController',
-                title: 'Naresh'
+                title: 'Naresh | Home'
             })
             // about page
             .when('/about', {
