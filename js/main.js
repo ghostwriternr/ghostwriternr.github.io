@@ -12,12 +12,26 @@
             .when('/about', {
                 templateUrl: 'about.html',
                 controller: 'aboutController',
+                resolve: {
+                    delay: function($q, $timeout) {
+                        var delay = $q.defer();
+                        $timeout(delay.resolve, 1500);
+                        return delay.promise;
+                    }
+                },
                 title: 'About me'
             })
             // contact page
             .when('/projects', {
                 templateUrl: 'projects.html',
                 controller: 'projectsController',
+                resolve: {
+                    delay: function($q, $timeout) {
+                        var delay = $q.defer();
+                        $timeout(delay.resolve, 1500);
+                        return delay.promise;
+                    }
+                },
                 title: 'Projects'
             }).otherwise({
                 redirectTo: '/'
@@ -174,8 +188,8 @@
             };
         }
     ]);
+
     app.directive('showDuringResolve', function($rootScope) {
-        console.log("SHOWDURINGRESOLVE");
         return {
             link: function(scope, element) {
 
@@ -190,8 +204,22 @@
         };
     });
 
+    app.directive('hideDuringResolve', function($rootScope) {
+        return {
+            link: function(scope, element) {
+
+                element.removeClass('ng-hide');
+
+                var unregister = $rootScope.$on('$routeChangeStart', function() {
+                    element.addClass('ng-hide');
+                });
+
+                scope.$on('$destroy', unregister);
+            }
+        };
+    });
+
     app.directive('resolveLoader', function($rootScope, $timeout) {
-        console.log("RESOLVELOADER");
         return {
             restrict: 'E',
             replace: true,
