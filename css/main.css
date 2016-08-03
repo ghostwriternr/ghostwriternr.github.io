@@ -109,33 +109,33 @@ body {
 }
 
 .page-home.ng-enter {
-    -webkit-animation: scaleUp 1.05s ease both;
-    animation: scaleUp 1.05s ease both;
+    -webkit-animation: scaleUp 1.4s ease both;
+    animation: scaleUp 1.4s ease both;
 }
 
 .page-home.ng-leave {
-    -webkit-animation: scaleDown 1.05s ease both;
-    animation: scaleDown 1.05s ease both;
+    -webkit-animation: scaleDown 1.4s ease both;
+    animation: scaleDown 1.4s ease both;
 }
 
 .page-about.ng-enter {
-    -webkit-animation: moveFromBottom .9s ease both;
-    animation: moveFromBottom .9s ease both;
+    -webkit-animation: moveFromBottom 1.2s ease both;
+    animation: moveFromBottom 1.2s ease both;
 }
 
 .page-about.ng-leave {
-    -webkit-animation: moveToBottom .9s ease both;
-    animation: moveToBottom .9s ease both;
+    -webkit-animation: moveToBottom 1.2s ease both;
+    animation: moveToBottom 1.2s ease both;
 }
 
 .page-projects.ng-enter {
-    -webkit-animation: moveFromBottom .9s ease both;
-    animation: moveFromBottom .9s ease both;
+    -webkit-animation: moveFromBottom 1.2s ease both;
+    animation: moveFromBottom 1.2s ease both;
 }
 
 .page-projects.ng-leave {
-    -webkit-animation: moveToBottom .9s ease both;
-    animation: moveToBottom .9s ease both;
+    -webkit-animation: moveToBottom 1.2s ease both;
+    animation: moveToBottom 1.2s ease both;
 }
 
 
