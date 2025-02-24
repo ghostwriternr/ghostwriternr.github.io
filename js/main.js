@@ -33,7 +33,21 @@
                     }
                 },
                 title: 'Projects'
-            }).otherwise({
+            })
+            // tutorial page
+            .when('/tutorial', {
+                templateUrl: 'tutorial.html',
+                controller: 'tutorialController',
+                resolve: {
+                    delay: function($q, $timeout) {
+                        var delay = $q.defer();
+                        $timeout(delay.resolve, 1500);
+                        return delay.promise;
+                    }
+                },
+                title: 'AgentFarm Tutorial'
+            })
+            .otherwise({
                 redirectTo: '/'
             });
 
@@ -186,6 +200,15 @@
                 $el.addClass('not-visible');
                 $el.removeClass('animated zoomIn');
             };
+        }
+    ]);
+
+    app.controller('tutorialController', ['$scope', '$http', '$sce', '$location',
+        function($scope, $http, $sce, $location) {
+            $scope.pageClass = 'page-tutorial';
+            $scope.goNext = function(hash) {
+                $location.path(hash);
+            }
         }
     ]);
 

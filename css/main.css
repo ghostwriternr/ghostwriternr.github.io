@@ -138,6 +138,58 @@ body {
     animation: moveToBottom 1.2s ease both;
 }
 
+/* Tutorial page styling */
+.page-tutorial {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    color: white;
+    padding-top: 50px;
+    overflow-y: auto;
+}
+
+.page-tutorial h1 {
+    font-family: junction regular;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.page-tutorial h2 {
+    font-family: junction regular;
+    font-size: 2em;
+    margin: 25px 0 15px;
+}
+
+.page-tutorial section {
+    margin-bottom: 40px;
+}
+
+.page-tutorial ul, .page-tutorial ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.page-tutorial li {
+    margin: 10px 0;
+}
+
+.page-tutorial a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.page-tutorial.ng-enter {
+    -webkit-animation: moveFromBottom 1.2s ease both;
+    animation: moveFromBottom 1.2s ease both;
+}
+
+.page-tutorial.ng-leave {
+    -webkit-animation: moveToBottom 1.2s ease both;
+    animation: moveToBottom 1.2s ease both;
+}
 
 /* Loader */
 
